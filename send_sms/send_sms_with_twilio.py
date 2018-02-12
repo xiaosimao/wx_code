@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 18-2-11 上午9:01
 # @Author  : ShiMeng
 # @File    : send_sms_with_twilio.py
 # @Software: PyCharm
