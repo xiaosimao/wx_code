@@ -1,6 +1,5 @@
 # coding:utf-8
 from config import download_delay
-
 import requests
 import time
 import hashlib
