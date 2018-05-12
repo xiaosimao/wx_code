@@ -5,11 +5,9 @@
 # @File    : spider.py
 # @Software: PyCharm
 
-import requests
 import time
 import re
 import os
-import urlparse
 from threading import Thread
 from Queue import Queue
 from tools import request
@@ -18,13 +16,13 @@ from config import base_header
 from config import space_ids
 from config import appkey, appsecret
 from config import download_thread_num, download_status, show_size_status
+
+
 video_url_queue = Queue()
 
 
 class Bilibili(object):
 
-    # def __int__(self):
-    #     self.space_ids = space_ids
 
     # 获取所有的aid
     def get_video_aid(self, space_id):
@@ -62,9 +60,9 @@ class Bilibili(object):
                     yield page, aid
 
     # 获取一级标题和二级标题，创建文件夹
-    def get_title_and_each_page_cid(self, space_aids):
-        for space_aid in space_ids:
-            for i, aid in self.get_each_aid_page_num(space_aid):
+    def get_title_and_each_page_cid(self, space_ids):
+        for space_id in space_ids:
+            for i, aid in self.get_each_aid_page_num(space_id):
                 page_num = i + 1
                 for j in range(1, page_num):
 
