@@ -5,7 +5,7 @@ base_header = {
 }
 
 # 博主ID
-space_ids = ['231946276']
+space_ids = ['xxxx']
 
 # 下载线程数
 download_thread_num = 2
@@ -14,8 +14,8 @@ download_thread_num = 2
 download_delay = 2
 
 # appkey
-appkey = 'f3bb208b3d081dc8'
-appsecret = '1c15888dc316e05a15fdd0a02ed6584f'
+appkey = 'xxx'
+appsecret = 'xxx'
 
 # 线程控制
 download_status = True

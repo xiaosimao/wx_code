@@ -5,7 +5,6 @@ import requests
 import time
 import hashlib
 import urlparse
-from config import base_header
 
 
 def request(url, header):
